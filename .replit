@@ -1,3 +1,3 @@
 language = "java10"
-run = "javac Main.java" 
+run = "javac Assignments.java" 
 #run = "java -Xmx128M -Xms16M Main"
