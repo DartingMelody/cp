@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std
 int dp[200001][2];
 int maxPair(int u, vector<int> *adj, vector<int> &vis, int par){
   if(vis[u]==1)
@@ -25,6 +26,7 @@ int main(){
     int u,v;
     cin>>u>>v;
     adj[u].push_back(v);
+    adj[v].push_back(u);
   }
   vis.push_back(0);
   for(int i = 1;i<=n;i++){
